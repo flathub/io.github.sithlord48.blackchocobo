@@ -1,15 +1,15 @@
-From 21339db92a319e00cc581a12bf19558c7a80bad8 Mon Sep 17 00:00:00 2001
+From 999f56d47951f6f2b354fdbdca3382cbd3cf9362 Mon Sep 17 00:00:00 2001
 From: Chris Rizzitello <sithlord48@gmail.com>
 Date: Fri, 3 Mar 2023 20:02:44 -0500
 Subject: [PATCH] flatpak deploy
 
 ---
- deploy/CMakeLists.txt                         |  8 +--
- deploy/blackchocobo.appdata.xml               | 29 ----------
+ deploy/CMakeLists.txt                         |  8 +-
+ deploy/blackchocobo.appdata.xml               | 29 -------
  ...io.github.sithlord48.blackchocobo.desktop} |  2 +-
- ...ithub.sithlord48.blackchocobo.metainfo.xml | 58 +++++++++++++++++++
+ ...ithub.sithlord48.blackchocobo.metainfo.xml | 83 +++++++++++++++++++
  ... => io.github.sithlord48.blackchocobo.xml} |  4 +-
- 5 files changed, 65 insertions(+), 36 deletions(-)
+ 5 files changed, 90 insertions(+), 36 deletions(-)
  delete mode 100644 deploy/blackchocobo.appdata.xml
  rename deploy/{org.sithlord48.blackchocobo.desktop => io.github.sithlord48.blackchocobo.desktop} (94%)
  create mode 100644 deploy/io.github.sithlord48.blackchocobo.metainfo.xml
@@ -85,10 +85,10 @@ index 59b0dc8..8c34c89 100644
  Name[de]=Schwarzer Chocobo
 diff --git a/deploy/io.github.sithlord48.blackchocobo.metainfo.xml b/deploy/io.github.sithlord48.blackchocobo.metainfo.xml
 new file mode 100644
-index 0000000..651f38f
+index 0000000..e215a3b
 --- /dev/null
 +++ b/deploy/io.github.sithlord48.blackchocobo.metainfo.xml
-@@ -0,0 +1,58 @@
+@@ -0,0 +1,83 @@
 +<?xml version="1.0" encoding="UTF-8"?>
 +<component type="desktop-application">
 +	<id>io.github.sithlord48.blackchocobo</id>
@@ -98,11 +98,23 @@ index 0000000..651f38f
 +	<developer_name>sithlord48</developer_name>
 +	<summary>A Save Editor for Final Fantasy VII</summary>
 +	<description>
-+		<p>	Black Chocobo is a save editor for Final Fantasy VII. </p>
-+		<p>
-+			Do a lot of things with ff7 saves, Including Convert Region or Format. Start New Game+ and more.
-+			Supports PC (98 + Steam), Emulators, PS3, PSP/ PsVita and Switch versions.
-+		</p>
++		<p> Black Chocobo is a save editor for Final Fantasy VII.</p>
++		<ul>
++			<li>Open All Kinds Of FF7 Saves ,PC, Psx ,Emulator Formats PS3, PSP, Switch</li>
++			<li>Will automatically detect 2012 steam saves and update your metadata.xml</li>
++			<li>Automatic Signing of ps3 and psp / psvita files</li>
++			<li>New Game + from your old saves</li>
++			<li>Import/Export Character stat files</li>
++			<li>Convert FF7 Save Game Formats And Regions</li>
++			<li>Extract Non FF7 Saves From memcard images</li>
++			<li>Slot Management Copy/Paste and Import slots to Saves</li>
++			<li>Edit Chars, Chocobo, Items/Materia</li>
++			<li>Edit: In-Game Options</li>
++			<li>Edit:Quest Progression</li>
++			<li>Set Chars In The PHS pool (bring aeris back or have a cloudless party)</li>
++			<li>Edit your save location</li>
++			<li>Edit Achievements for 2012/Steam versions</li>
++		</ul>
 +	</description>
 +	<launchable type="desktop-id">io.github.sithlord48.blackchocobo.desktop</launchable>
 +	<url type="homepage">https://github.com/sithlord48/blackchocobo</url>
@@ -116,6 +128,19 @@ index 0000000..651f38f
 +	<provides>
 +		<id>io.github.sithlord48.blackchocobo.desktop</id>
 +	</provides>
++	<categories>
++		<category>Game</category>
++	</categories>
++	<keywords>
++		<keyword translate="no">PSX</keyword>
++		<keyword translate="no">FF7</keyword>
++		<keyword translate="no">Final</keyword>
++		<keyword translate="no">Fantasy</keyword>
++		<keyword translate="no">VII</keyword>
++		<keyword translate="en">Editor</keyword>
++		<keyword translate="en">Save</keyword>
++		<keyword translate="en">Playstation</keyword>
++	</keywords>
 +	<content_rating type="oars-1.0" />
 +	<releases>
 +		<release version="1.13.0" date="2022-08-31" urgency="high"/>
