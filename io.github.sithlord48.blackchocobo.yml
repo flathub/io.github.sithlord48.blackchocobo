@@ -30,26 +30,30 @@ modules:
       - -DUTILS=OFF
     sources:
       - type: archive
-        url: https://github.com/sithlord48/ff7tk/archive/refs/tags/v0.83.1.tar.gz
-        sha256: 94a33f0b9fa77c43d0a3bf47939b97e5bc43bc6e2ec5d8b732a59d00e2be4298
+        url: https://github.com/sithlord48/ff7tk/archive/refs/tags/v0.83.2.tar.gz
+        sha256: 2e0c7bf80b4cdb1ab63bc6d971312eb3ef7ea29dc1682746386b2b0858457241
         x-checker-data:
           type: json
           url: https://api.github.com/repos/sithlord48/ff7tk/tags
-          version-query: map(.name | select(test("^v[\\d\\.]+$"))) | first | sub("^v"; "")
-          url-query: '"https://github.com/sithlord48/ff7tk/archive/refs/tags/v" + $version + ".tar.gz"'
+          version-query: map(.name | select(test("^v[\\d\\.]+$"))) | first | sub("^v";
+            "")
+          url-query: '"https://github.com/sithlord48/ff7tk/archive/refs/tags/v" +
+            $version + ".tar.gz"'
 
   - name: blackchocobo
     buildsystem: cmake-ninja
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/sithlord48/blackchocobo/archive/refs/tags/v1.13.0.tar.gz
-        sha256: a046e23d8eb31d1c3f3e16c4e24ecd1ddfaf5127f67217ae63d370ba25960a5d
+        url: https://github.com/sithlord48/blackchocobo/archive/refs/tags/v1.14.0.tar.gz
+        sha256: 100f12ad119d2f0e618b794bc17d0941faab23ae307d04dad2b7ec65794d3db2
         x-checker-data:
           type: json
           url: https://api.github.com/repos/sithlord48/blackchocobo/tags
-          version-query: map(.name | select(test("^v[\\d\\.]+$"))) | first | sub("^v"; "")
-          url-query: '"https://github.com/sithlord48/blackchocobo/archive/refs/tags/v" + $version + ".tar.gz"' 
+          version-query: map(.name | select(test("^v[\\d\\.]+$"))) | first | sub("^v";
+            "")
+          url-query: '"https://github.com/sithlord48/blackchocobo/archive/refs/tags/v"
+            + $version + ".tar.gz"'
       - type: patch
         path: flatpakDeploy.patch
       - type: patch
