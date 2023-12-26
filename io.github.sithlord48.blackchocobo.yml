@@ -1,7 +1,7 @@
 app-id: io.github.sithlord48.blackchocobo
 runtime: org.kde.Platform
 sdk: org.kde.Sdk
-runtime-version: '6.4'
+runtime-version: '6.6'
 command: blackchocobo
 finish-args:
   - --filesystem=host
@@ -31,7 +31,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/sithlord48/ff7tk/archive/refs/tags/v0.83.3.tar.gz
-        sha256: 9e7b1ce260a7a68a679f3c054367720e894cac4f9cc1e184ec8a34e4bded2c80
+        sha256: b3919750f422f128cf7453b7dca7aeeca50f01ab08ca52473097ab37bf528c22
         x-checker-data:
           type: json
           url: https://api.github.com/repos/sithlord48/ff7tk/tags
