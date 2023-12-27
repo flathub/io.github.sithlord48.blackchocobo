@@ -30,8 +30,8 @@ modules:
       - -DUTILS=OFF
     sources:
       - type: archive
-        url: https://github.com/sithlord48/ff7tk/archive/refs/tags/v0.83.3.tar.gz
-        sha256: 9e7b1ce260a7a68a679f3c054367720e894cac4f9cc1e184ec8a34e4bded2c80
+        url: https://github.com/sithlord48/ff7tk/archive/refs/tags/v1.0.0.tar.gz
+        sha256: 067bc41efea4262dd3818fafbe1cd3e48b45ee88a4655dcbb6cb85213da1b3c5
         x-checker-data:
           type: json
           url: https://api.github.com/repos/sithlord48/ff7tk/tags
@@ -45,8 +45,8 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/sithlord48/blackchocobo/archive/refs/tags/v1.14.0.tar.gz
-        sha256: 100f12ad119d2f0e618b794bc17d0941faab23ae307d04dad2b7ec65794d3db2
+        url: https://github.com/sithlord48/blackchocobo/archive/refs/tags/v1.15.0.tar.gz
+        sha256: 7c6ee927222dda8dffa79db49ebe53ee9a9b5bc4bb1964aeefcc41910d176ae1
         x-checker-data:
           type: json
           url: https://api.github.com/repos/sithlord48/blackchocobo/tags
