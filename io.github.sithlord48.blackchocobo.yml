@@ -5,8 +5,8 @@ runtime-version: '6.6'
 command: blackchocobo
 finish-args:
   - --filesystem=host
-  - --socket=fallback-x11
   - --socket=wayland
+  - --socket=fallback-x11
   - --share=ipc
 
 cleanup:
