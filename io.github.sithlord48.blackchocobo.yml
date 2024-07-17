@@ -1,7 +1,7 @@
 app-id: io.github.sithlord48.blackchocobo
 runtime: org.kde.Platform
 sdk: org.kde.Sdk
-runtime-version: '6.6'
+runtime-version: '6.7'
 command: blackchocobo
 finish-args:
   - --filesystem=host
