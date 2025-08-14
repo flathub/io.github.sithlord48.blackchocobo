@@ -30,8 +30,8 @@ modules:
       - -DUTILS=OFF
     sources:
       - type: archive
-        url: https://github.com/sithlord48/ff7tk/archive/refs/tags/v1.3.0.tar.gz
-        sha256: 7da0bbcf994ef7ed93f77cc7b04627b22167885271f7b3e4e1db354490c8c4ec
+        url: https://github.com/sithlord48/ff7tk/archive/refs/tags/v1.3.1.tar.gz
+        sha256: d1451ac6f52490facf07b8de40abcf2e6d59a893056fffb4a0c8d6c5b4a9018b
         x-checker-data:
           type: json
           url: https://api.github.com/repos/sithlord48/ff7tk/tags
